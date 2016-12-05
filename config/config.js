@@ -2,6 +2,7 @@
     'use strict';
 
     const commandLineArgs = require('command-line-args');
+    const AWS = require('aws-sdk');
     const optionDefinitions = [
         { name: 'awsUserId', alias: 'u', type: String },
         { name: 'awsRegion', alias: 'r', type: String },
@@ -29,11 +30,10 @@
     if (!settings.awsQueueName && process.env.AWS_MAKER_SQS_QUEUE_NAME){
         settings.awsQueueName = process.env.AWS_MAKER_SQS_QUEUE_NAME; 
     }
-    
-    
+
     let awsConfig = new AWS.Config();
     awsConfig.update({region: settings.awsRegion});
-
+    
 
     exports.apiSettings = {
         apiKey: settings.apiKey,
