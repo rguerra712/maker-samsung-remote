@@ -10,15 +10,13 @@ Programming a smart samsung TV using maker and webtask (from IFTTT) on your loca
 1. Run the application `npm run maker-samsung-remote`
 1. You can now control your TV by making API calls to webtask (or having maker make API calls to maker)
 
-For example:
-```
+# Example:
 1. Setup IFTTT such that IF is a Google Assistant call (or whatever tricker you want) to raise the tv off
 2. Run the application above, with the MAKER_WEBTASK_URL environment variable set to https://wt-myemail-gmail-com-0.run.webtask.io and the WEBTASK_SECRET variable set to somesecret (NOTE: these need to be your own url and secret)
 3. Setup Maker to POST to your API queue, for example:
-POST https://wt-myemail-gmail-com-0.run.webtask.io/queue?secret=somesecret
-{
+`POST` to https://wt-myemail-gmail-com-0.run.webtask.io/queue?secret=somesecret
+```{
   "device": "tv",
   "command": "off"
-}
+}```
 4. Watch your tv turn off if successful
-```
