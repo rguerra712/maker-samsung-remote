@@ -5,7 +5,7 @@ Programming a smart samsung TV using maker and webtask (from IFTTT) on your loca
 1. Follow the ![steps to setup a webtask queue](https://github.com/rguerra712/webtask-queue/) and the environment variables needed
   1. Be sure to set the environment variables for `MAKER_WEBTASK_URL` and `WEBTASK_SECRET`
 1. If you know what range of ports your vera device is running, add it to the environment variable `MIOS_VERA_IP_RANGE`
-  1. e.g. `MIOS_VERA_IP_RANGE=100-140`
+  1. e.g. `SAMSUNG_IP_RANGE=100-140`
 1. Install the package via `npm install maker-samsung-remote`
 1. Run the application `npm run maker-samsung-remote`
 1. You can now control your TV by making API calls to webtask (or having maker make API calls to maker)
