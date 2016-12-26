@@ -24,7 +24,5 @@
         finder.scan(checkCorrectIpAndRunCommand, settings.samsungSettings.ipRange);
     };
     
-    webtask.run('tv', 5)
-        .then(scanForIpAndRunCommand)
-        .catch(logMessage);
+    webtask.run('tv', 5, scanForIpAndRunCommand, logMessage);
 })();

@@ -11,7 +11,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "local-device-finder": "^1.0.1",
-    "maker-webtask": "^1.0.13",
+    "maker-webtask": "^1.0.14",
     "samsung-remote": "^1.2.5",
     "unirest": "^0.5.1"
   }
