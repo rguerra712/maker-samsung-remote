@@ -1,13 +1,9 @@
 {
   "name": "maker-samsung-remote",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
-  "author": "",
+  "version": "1.0.9",
+  "description": "Programming a smart samsung TV using maker and webtask (from IFTTT) on your local network",
+  "main": "server.js",
+  "author": "R. Stephen Guerra",
   "license": "Apache-2.0",
   "dependencies": {
     "local-device-finder": "^1.0.1",
